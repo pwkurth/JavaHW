@@ -105,7 +105,21 @@ public class Cart {
         }//End of outer most if condition
         else
             System.out.print("ERROR: Cart is full.");
+
+        calculateTotals();
     }//End of void add method
+    
+    private void calculateTotals() {
+        totalQuantity = 0;
+        totalPrice = 0;
+        for(int i = 0; i < items.length; i++) {
+            int quantity = itemQuantities[i];
+            if (quantity > 0) {
+                totalQuantity += quantity;
+                totalPrice += items[i].getPrice() * quantity;
+            }
+        }
+    }
 
     void remove(Item item, int removeQuantity) //Method to delete an item from cart
     {
@@ -152,7 +166,7 @@ public class Cart {
         }//End of outer most if condition
         else
             System.out.println("ERROR: Cart is empty.");
-        }//End of method
+    }//End of method
 
 
     private int search(Item item) {

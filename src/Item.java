@@ -7,11 +7,11 @@ public class Item {
     protected double price; //Price of the item
 
     public void setName(String n) {
-        this.name = name; //sets the name of item
+        this.name = n; //sets the name of item
     }
 
     public void setPrice(double p) {
-        this.price = price; //sets the price of item
+        this.price = p; //sets the price of item
     }
 
     public String getName() {
@@ -22,21 +22,20 @@ public class Item {
         return price; //retrieves price
     }
 
-    public String formattedOutput(){
-
-       return name + "," + price;
-
+    public String formattedOutput() {
+        return name + "," + price;
     }
+
     //Constructor to set name and price to new variables
-    Item(String n, double p){
-        this.name = n;
-        this.price = p;
+    Item(String n, double p) {
+        name = n;
+        price = p;
     }
 
     //Default constructor
-    Item(){
-        this.name = "";
-        this.price = 0;
+    Item() {
+        name = "";
+        price = 0;
     }
 
 
