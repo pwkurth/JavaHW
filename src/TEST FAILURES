@@ -1,0 +1,175 @@
+*POSTING MY TEST FAILURES TO HELP DETERMINE CODE ERROR*
+*LONG TEXT INC*
+*Each EMPTY space means start of new test error*
+
+TEST 2
+Error in Item class! Item name was set to "Green Apple" and price to 2.99. Tried to set price to -0.99
+Found name:Apple, price=1.99
+
+Test 3 (Electronics class constrcutor, accessors and method formattedOutput)
+Your output
+Error in Electronics class! Item was created as Electronics("Laptop",299.99,"Asus",2018)
+Found name:, price=0.0, make=null, year=0
+Formatted Output: ,null,0 should be Laptop,299.99,Asus,2018 
+
+Test 4 (Electronics class mutator)
+Your output
+Error in Electronics class! Item name was set to "Desktop", price 399.99, model "HP", year 2019
+Found name:, price=0.0, make=HP, year=2019
+
+Test 5 (Food class constrcutor , accessors and method formattedOutput)
+Your output
+Error in Food class! Item was created as Food("Orange Juice",4.49,23.99,"oz")
+Found name:, price=0.0, weight=0.0, weightUnitnull
+Formatted Output: ,0.0,0.0,null should be Orange Juice,4.49,23.99,oz 
+
+Test 6 (Food class mutator)
+Your output
+Error in Electronics class! Item was set to "Orange",1.49, 3.00, "lb")
+Found name:, price=0.0, weight=0.0, weightUnitlb
+
+Test 7 (Dress class constrcutor, accessors and method formattedOutput)
+Your output
+Error in Dress class! Item was created as Dress("T-shirt",19.99,"XS","Mixed")
+Found name:, price=0.0, size=XS, fabricXS
+Formatted Output: ,0.0,XS,Mixed should be T-Shirt,19.99,XS,Mixed 
+
+Test 8 (Dress class mutators)
+Your output
+Error in Dress class! Item was set to ("Shirt",10.49,"Small","Cotton")
+Found name:, price=0.0, size=Small, fabricSmall
+
+5 / 5
+Test 9 (Cart class constructor, add method and accessors)
+Your output
+Item added successfully.
+Item added successfully.
+
+Test 10 (Cart class constructor, add method and accessors, trying add items when cart is full)
+Your output
+Item added successfully.
+Item added successfully.
+Item added successfully.
+Item added successfully.
+Item added successfully.
+Item added successfully.
+Item added successfully.
+Item added successfully.
+Item added successfully.
+Error in Cart class!
+Cart totalPrice: 0.0 it should be 4330.0
+Cart totalQuantity: 23 it should be 22
+
+Test 11 (Cart class add method, trying to add same item twice)
+Your output
+Item added successfully.
+Item added successfully.
+Error in Cart class!
+Cart totalPrice: 0.0 it should be 20.98 	
+Cart totalQuantity: 2 it should be 2 )
+Cart itemCount: 1 it should be 1 or 2 (depending on implementing bonus or not
+
+Test 12 (Cart class add method, trying invalid number of items to add)
+Your output
+Item added successfully.
+ERROR: Invalid quantity.
+Error in Cart class!
+Cart totalPrice: 0.0 it should be 20.98 	
+Cart totalQuantity: 2 it should be 2
+Cart itemCount: 1 it should be 1
+
+Test 13 (Cart class remove method, removing some quantity of a item from cart)
+Your output
+Item added successfully.
+Item added successfully.
+Item  removed successfully.
+Error in Cart class!
+Cart totalPrice: 0.0 it should be 420.97	
+Cart totalQuantity: 3 it should be 3
+Cart itemCount: 1 it should be 2
+
+Test 14 (Cart class remove method, removing all quantity of a item from cart)
+Your output
+Item added successfully.
+Item added successfully.
+Item  removed successfully.
+Error in Cart class!
+Cart totalPrice: 0.0 it should be 20.98	
+Cart totalQuantity: 2 it should be 2
+Cart itemCount: 1 it should be 1
+
+Test 15 (Cart class remove method, trying to remove more quantities of a item then it is actually present in the cart)
+Your output
+Item added successfully.
+Item added successfully.
+Item  removed successfully.
+Error in Cart class!
+Cart totalPrice: 0.0 it should be 20.98	
+Cart totalQuantity: 0 it should be 2
+Cart itemCount: 0 it should be 1
+
+Test 16 (Cart class remove method, trying to remove item not in the cart)
+Your output
+Item added successfully.
+Item added successfully.
+Item  removed successfully.
+Error in Cart class!
+Cart totalPrice: 0.0 it should be 420.97	
+Cart totalQuantity: 2 it should be 3
+Cart itemCount: 1 it should be 2
+
+Test 17 (Cart class mutator, setting cartSize<0 or cartSize<itemCount)
+Your output
+Item added successfully.
+Item added successfully.
+Item added successfully.
+
+18: Unit test
+0 / 5
+Test 18 (Cart class mutator, reducing cart size >= itemcount)
+Your output
+Item added successfully.
+Item added successfully.
+Item added successfully.
+Error in Cart class!
+Cart size is: 5 it should be 4
+
+19: Unit test
+0 / 5
+Test 19 (Cart class mutator, increasing cart size)
+Your output
+Item added successfully.
+Item added successfully.
+Item added successfully.
+Error in Cart class!
+Cart size is: 5 it should be 20
+
+20: Unit test
+0 / 5
+Test 20 (Polymorphism, checking overridden method formattedOutput)
+Your output
+Error in Test class!
+FormattedOutput is : ,null,0 it should be "Laptop,700.01,Asus,2018" without the quotes 	
+
+21: Unit test
+0 / 10
+Bonus 1
+Your output
+Item added successfully.
+Item added successfully.
+Item added successfully.
+Error in Cart class!
+Cart totalPrice: 0.0 it should be 2000.00	
+Cart totalQuantity: 3 it should be 3
+Cart itemCount: 1 it should be 3
+
+22: Unit test
+0 / 10
+Bonus 2
+Your output
+Item added successfully.
+Item  removed successfully.
+Error in Cart class!
+Cart totalPrice: 0.0 it should be 500.00	
+Cart totalQuantity: 0 it should be 1
+Cart itemCount: 1 it should be 1
