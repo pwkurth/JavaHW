@@ -152,7 +152,7 @@ public class Cart {
         }//End of outer most if condition
         else
             System.out.println("ERROR: Cart is empty.");
-        }//End of method
+    }//End of method
 
 
     private int search(Item item) {
