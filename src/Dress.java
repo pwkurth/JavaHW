@@ -1,5 +1,5 @@
 public class Dress extends Item {
-//Set up private attributes
+    //Set up private attributes
     private String size;
     private String fabric;
 
@@ -27,13 +27,14 @@ public class Dress extends Item {
 
     public String getFabric(){
 
-        return size;
+        return fabric;
     }
 
     public Dress(String n, double p, String s, String f){
 
-        size = s;
-        fabric = f;
+        super(n, p);
+        setSize(s);
+        setFabric(f);
     }
 
     public String formattedOutput()
