@@ -7,9 +7,12 @@ public class Food extends Item {
 
         this.weightUnit = wu;
     }
-    public void setWeight(double wt){
-        if(wt < 0)
-            weight = wt;
+    public void setWeight(double value) {
+        if (value > 0) {
+            weight = value;
+
+        }
+
     }
     public String getWeightUnit(){
 
@@ -28,9 +31,11 @@ public class Food extends Item {
 
     public Food(String n, double p, double w, String wu){
 
-        if(w<0)
+        super(n, p);
+        setWeight(w);
+        setWeightUnit(wu);
 
-            weight = 0;
+
     }
     public Food(){
 
@@ -40,4 +45,3 @@ public class Food extends Item {
 
 
 }
-
